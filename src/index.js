@@ -36,7 +36,7 @@ const theme = createTheme({
       default: "#F7FBFF",
     },
     contrastThreshold: 3,
-    tonalOffset: 0.2,
+    tonalOffset: 0.1,
   },
 
 })

@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography"
 function Error() {
     return (
         <Container
-        sx={{textAlign:"center", color:"text.light", height:"100vh", display:"flex", alignItems:"center", justifyContent:"space-evenly", flexDirection:"column"}}>
+        sx={{textAlign:"center", color:"error.main", height:"100vh", display:"flex", alignItems:"center", justifyContent:"space-evenly", flexDirection:"column"}}>
             <Box p={5} sx={{border:"3px solid", borderColor:"error.main"}}>
                 <Typography variant="caption">¯\_(ツ)_/¯</Typography>
                 <Typography variant="h1">404</Typography>

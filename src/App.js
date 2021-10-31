@@ -16,7 +16,7 @@ export default function App() {
     <Router>
       <Container maxWidth="false"
       sx={{backgroundImage: `url(${bg})`, minHeight: "100vh", backgroundPosition: "center", backgroundRepeat:"no-repeat",
-            backgroundSize:"cover", backgroundAttachment:"fixed"}}>
+            backgroundSize:"cover", backgroundAttachment:"fixed", py:2}}>
 
         <Switch>
           <Route exact path="/" component={Home}/>
