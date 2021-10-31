@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+//Router imports
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
+//MUI imports
+import Container from '@mui/material/Container';
+
+//Pages imports
+import Home from "./Pages/Home";
+
+//Assets imports
+import bg from "./Assets/bg.svg"
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Container maxWidth="false"
+      sx={{backgroundImage: `url(${bg})`, minHeight: "100vh", backgroundPosition: "center", backgroundRepeat:"no-repeat",
+            backgroundSize:"cover", backgroundAttachment:"fixed"}}>
+
+        <Switch>
+          <Route exact path="/" component={Home}/>
+        </Switch>
+        
+      </Container>
+    </Router>
   );
 }
-
-export default App;
