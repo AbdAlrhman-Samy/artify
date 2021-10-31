@@ -6,6 +6,7 @@ import Container from '@mui/material/Container';
 
 //Pages imports
 import Home from "./Pages/Home";
+import Error from "./Pages/Error";
 
 //Assets imports
 import bg from "./Assets/bg.svg"
@@ -19,6 +20,7 @@ export default function App() {
 
         <Switch>
           <Route exact path="/" component={Home}/>
+          <Route component={Error}/>
         </Switch>
         
       </Container>
