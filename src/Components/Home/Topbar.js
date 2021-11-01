@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 //MUI imports
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
@@ -14,7 +16,10 @@ function Topbar() {
 
             <Box component="img" src={logo} maxWidth="100px" />
 
-            <Button color="inherit"  startIcon={<FaUserCircle/>}>Login</Button>
+            <Link to="/Signin" style={{ textDecoration: "none", color:"black" }}>
+                <Button color="inherit"  startIcon={<FaUserCircle/>}>Login</Button>
+            </Link>
+
         </AppBar>
     )
 }

@@ -6,6 +6,8 @@ import Container from '@mui/material/Container';
 
 //Pages imports
 import Home from "./Pages/Home";
+import Signup from "./Pages/Signup";
+import Signin from "./Pages/Signin";
 import Error from "./Pages/Error";
 
 //Assets imports
@@ -20,6 +22,10 @@ export default function App() {
 
         <Switch>
           <Route exact path="/" component={Home}/>
+
+          <Route exact path="/signup" component={Signup}/>
+          <Route exact path="/signin" component={Signin}/>
+
           <Route component={Error}/>
         </Switch>
         
